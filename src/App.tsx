@@ -1,7 +1,7 @@
-import React from 'react';
+import * as React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
-import { Home } from './pages/Home';
+import HomePage from "./Base/sachin"; // Changed from { HomePage } to HomePage
 import { Projects } from './pages/Projects';
 import { Pricing } from './pages/Pricing';
 import { Teams } from './pages/Teams';
@@ -13,11 +13,11 @@ import { ResetPassword } from './pages/resetpass';
 import { SuccessConfirmation } from './pages/SuccessConfirmation';
 import { Dashboard } from './pages/Dashboard';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path='/' element={<HomePage/>}/>
         <Route path="/projects" element={<Projects />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/teams" element={<Teams />} />
