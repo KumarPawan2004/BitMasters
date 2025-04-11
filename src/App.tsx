@@ -8,6 +8,10 @@ import { Teams } from './pages/Teams';
 import { Mentorship } from './pages/Mentorship';
 import { SignIn } from './pages/SignIn';
 import { SignUp } from './pages/SignUp';
+import { ForgotPassword } from './pages/ForgotPassword';
+import { ResetPassword } from './pages/resetpass';
+import { SuccessConfirmation } from './pages/SuccessConfirmation';
+import { Dashboard } from './pages/Dashboard';
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
         <Route path="/mentorship" element={<Mentorship />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/confirmation" element={<SuccessConfirmation />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Layout>
   );
